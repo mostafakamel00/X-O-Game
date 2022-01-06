@@ -1,0 +1,38 @@
+body {
+  background-color: #ccf;
+}
+.game {
+  width: 800px;
+
+  text-align: center;
+  font-family: system-ui;
+  color: white;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+  .title {
+    background-color: #f25;
+    margin: 5px 0;
+    padding: 5px 0;
+    span {
+      color: #fa0;
+    }
+  }
+  .parent {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    .square {
+      background-color: #f25;
+      width: 100%;
+      height: 200px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-size: 100px;
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
